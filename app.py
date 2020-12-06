@@ -359,7 +359,7 @@ def predict():
         return render_template('home.html',prediction_text="Your Flight price is Rs. {}".format(output))
 
 
-    return render_template("home.html")
+   return render_template("home.html")
 
 
 
