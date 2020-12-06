@@ -17,10 +17,10 @@ def home():
 
 
 
-@app.route("/predict", methods = ["POST"])
+@app.route("/predict", methods = ["POST","GET"])
 @cross_origin()
 def predict():
-   # if request.method == "POST":
+   if request.method == "POST":
 
         # Date_of_Journey
         date_dep = request.form["Dep_Time"]
